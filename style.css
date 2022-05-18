@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template:  
+    'header       header   header       header' auto
+    'left-menu    main    right-menu    right-menu1 ' 1fr/
+     auto         1fr      auto       auto    ; 
+}
+
+.header{
+    grid-area: header ;
+    background-color: #ffffff;
+    padding: 1rem;
+    border-bottom: 2px solid  #eef1f2;
+}
+.icon img {
+    height: 20px;
+    padding-right: 5px;
+}
+.name{
+    font-size: 27px;
+}
+.name1{
+    padding: 10px;
+    margin-left: 40px;
+    background-color: hsl(200deg 12% 95%);
+    padding-right: 10% ; 
+    border-radius: 15px;
+    padding-left: 50px;
+} 
+.left-menu{
+    grid-area: left-menu;
+    background-color: #ffffff;
+    padding: 1rem;
+    border-right: 2px solid  #eef1f2;
+}
+.Compose{
+    box-shadow: 2px 3px rgb(195, 198, 199);
+    margin: px;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.email{
+    margin-top: 25px;
+    border-bottom: 2px solid #eef1f2;
+    padding-right: 40px;
+    height: 200px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align:justify
+}
+.inbox, .Starred, .Snoozed, .Important, .Sent, .Team, .New-RFPs, .Projects,
+.Personal, .More{
+    padding-bottom: 5px;
+    padding-left: 20px
+} 
+.inbox{
+    background-color: #fce8e6;
+    border-radius: 10px;
+    color: #d01211; 
+}
+.Meet{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #eef1f2;
+}
+.Start, .Join{
+    margin-top: 10px;
+    padding-left: 10px;
+}
+.right-menu{
+    grid-area: right-menu;
+    background-color: #ffffff;
+    padding: 1rem;
+    border-left: 2px solid  #eef1f2;
+
+}
+.See{
+    border: 2px solid #eef1f2;
+    padding: 5px 5px;
+    margin-top: 10px;
+    color:#488eed
+}
+.options{
+    padding-right: 20px;
+    height: 400px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align:justify;
+    margin-top: 20px;
+}
+.d1, .d2{
+    padding: 10px;
+}
+.d2{
+    border-bottom: 2px solid #eef1f2;
+}
+.th{
+   margin-top: 20px;
+   padding-bottom: 60px;
+   border-bottom: 2px solid #eef1f2 ;
+}
+.collage img{
+    margin-top: 20px;
+    width: 150px;
+    
+}
+.w{
+    margin-left: 20px;
+    color:hsl(216deg 82% 53%) ; 
+    display: inline;
+
+}
+.i1{
+    margin-top:20px
+}
+.i2{
+    padding: 20px;
+}
+
+.right-menu1{
+    grid-area: right-menu1;
+    background-color: #ffffff;
+    padding: 1rem;
+    border-left: 2px solid  #eef1f2;
+    padding: 20px;
+}
+.right-menu1 img{
+    width: 30px;
+}
+.gcalendar, .gnote, .gtask, .gplus{
+    margin-bottom: 20px;
+}
+.main{
+    grid-area: main;
+    background-color: #ffffff;
+    padding: 1rem;
+    height: 50rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align:justify;
+}
+.Text {
+    border-bottom: 2px solid #eef1f2;
+    padding: 10px;
+}
+
+
+@media screen and (max-width: 800px) {
+    .container{
+        grid-template:  
+        'header       header   header       header' auto
+        'left-menu    main    right-menu    right-menu1 ' 1fr/
+         auto         1fr      auto       auto    ; 
+    }
+    .right-menu{
+        display: none;
+    }
+
+}
+@media screen and (max-width: 600px) {
+    .container{
+        grid-template:  
+        'header       header   header       header' auto
+        'left-menu    main    right-menu    right-menu1 ' 1fr/
+         auto         1fr      auto       auto    ; 
+    }
+    .right-menu1{
+        display: none;
+    }
+    .left-menu{
+        display: none;
+    }
+}
